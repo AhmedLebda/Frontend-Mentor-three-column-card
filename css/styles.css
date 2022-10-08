@@ -1,0 +1,99 @@
+/* ----------> Variables <---------- */
+:root {
+    /* Fonts */
+    --font-lexend-deca: "Lexend Deca", sans-serif;
+    --font-big-shoulders-display: "Big Shoulders Display", cursive;
+    /* Colors */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraph-color: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* ----------> Global Styles <---------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ----------> General Card Styles <---------- */
+main.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+}
+.card-wrapper {
+    padding: 60px 37px;
+    background-color: var(--bright-orange);
+    position: relative;
+}
+.card-wrapper img {
+    margin-bottom: 30px;
+}
+.card-wrapper .card-info {
+    font-family: var(--font-lexend-deca);
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.card-wrapper .card-info h1 {
+    font-family: var(--font-big-shoulders-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.card-wrapper .card-info p {
+    color: var(--paragraph-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.card-wrapper .card-info button {
+    position: absolute;
+    bottom: 60px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid var(--very-light-gray);
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    width: 60%;
+    font-size: 15px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    color: var(--very-light-gray);
+}
+/* ----------> Specific Card Styles <---------- */
+.card-wrapper[data-category="sedan"] {
+    background-color: var(--bright-orange);
+}
+.card-wrapper[data-category="sedan"] button:hover {
+    color: var(--bright-orange);
+    background-color: var(--very-light-gray);
+}
+.card-wrapper[data-category="suv"] {
+    background-color: var(--dark-cyan);
+}
+.card-wrapper[data-category="suv"] button:hover {
+    color: var(--dark-cyan);
+    background-color: var(--very-light-gray);
+}
+.card-wrapper[data-category="luxury"] {
+    background-color: var(--very-dark-cyan);
+}
+.card-wrapper[data-category="luxury"] button:hover {
+    color: var(--very-dark-cyan);
+    background-color: var(--very-light-gray);
+}
