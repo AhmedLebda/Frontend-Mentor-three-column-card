@@ -21,8 +21,8 @@ Simple 3 column preview card using HTML and CSS
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Github repo](https://github.com/AhmedLebda/Frontend-Mentor-three-column-card.git)
+-   Live Site URL: [Live Site URL](https://ahmedlebda.github.io/Frontend-Mentor-three-column-card/)
 
 ### Built with
 
